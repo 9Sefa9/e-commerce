@@ -32,7 +32,7 @@ export const NavLink = styled(Link)`
   padding: 10px 20px;
   margin: auto 1rem;
   height: 100%;
-
+  box-shadow: 0px 1px 5px black;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   &.active {
@@ -129,7 +129,7 @@ export const NavBtnLink = styled(Link)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  
+  box-shadow: 0px 1px 5px black;
   &.active {
     background: white;
     color: black;
