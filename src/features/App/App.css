@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'ZenKakuGothicNew-Black';
+  src: local('Black'), url(./fonts/ZenKakuGothicNew/ZenKakuGothicNew-Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'ZenKakuGothicNew-Bold';
+    src: local('Bold'), url(./fonts/ZenKakuGothicNew/ZenKakuGothicNew-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'ZenKakuGothicNew-Light';
+    src: local('Light'), url(./fonts/ZenKakuGothicNew/ZenKakuGothicNew-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'ZenKakuGothicNew-Medium';
+  src: local('Medium'), url(./fonts/ZenKakuGothicNew/ZenKakuGothicNew-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'ZenKakuGothicNew-Regular';
+    src: local('Regular'), url(./fonts/ZenKakuGothicNew/ZenKakuGothicNew-Regular.ttf) format('truetype');
+}
+
+*,html,body{
+  font-family: ZenKakuGothicNew-Regular;
+}
