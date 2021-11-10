@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #00a68a;
+  background: #141C2C;
   height: 85px;
   padding: 0% 2%;
   z-index: 12;
@@ -32,7 +32,7 @@ export const NavLink = styled(Link)`
   padding: 10px 20px;
   margin: auto 1rem;
   height: 100%;
-  box-shadow: 0px 1px 5px black;
+  box-shadow: 0px 1px 5px white;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   &.active {
@@ -82,6 +82,8 @@ export const ImgLink = styled(Link)`
   .shopping-cart-count{
     margin:auto 5%;
     font-size:23px;
+    color:white;,
+    
   }
 `;
 export const Bars = styled(FaBars)`
@@ -129,7 +131,7 @@ export const NavBtnLink = styled(Link)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  box-shadow: 0px 1px 5px black;
+  box-shadow: 0px 1px 5px white;
   &.active {
     background: white;
     color: black;

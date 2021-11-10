@@ -8,7 +8,7 @@ import catalogSidebarSlice, { toggle } from "./CatalogSidebarSlice";
 
 function CatalogSidebar() {
   const [state, dispatch] = useReducer(catalogSidebarSlice, {
-    toggleSidebar: false,
+    toggleSidebar: null,
   });
 
   return (
@@ -22,18 +22,11 @@ function CatalogSidebar() {
           Filter Catalog
         </Button>
       </ButtonContainer>
-      
-      {state.toggleSidebar === true ? (
-        <div>
-          <SidebarContainer on>
-            <p>hi</p>
-          </SidebarContainer>
-        </div>
-      ) : (
-        <SidebarContainer off>
-            <p>hi</p>
-          </SidebarContainer>
-      )}
+
+      <SidebarContainer sidebarStatus={state.toggleSidebar}>
+      {console.log(state.toggleSidebar)}
+        <p>t</p>
+      </SidebarContainer>
     </div>
   );
 }

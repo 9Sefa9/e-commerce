@@ -22,7 +22,11 @@
     font-family: 'ZenKakuGothicNew-Regular';
     src: local('Regular'), url(./fonts/ZenKakuGothicNew/ZenKakuGothicNew-Regular.ttf) format('truetype');
 }
+body{
+  background-color:#052845;
 
+}
 *,html,body{
   font-family: ZenKakuGothicNew-Regular;
+
 }
