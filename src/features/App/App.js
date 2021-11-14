@@ -6,6 +6,7 @@ import Spinner from "../Spinner/Spinner";
 const Home = React.lazy(()=> import("../Home/Home.js"));
 const Cart = React.lazy(()=> import("../Cart/Cart.js"));
 const Contact = React.lazy(()=> import("../Contact/Contact.js"));
+const User = React.lazy(()=> import("../User/User.js"));
 const SignIn = React.lazy(()=> import("../SignIn/SignIn.js"));
 const SignUp = React.lazy(()=> import("../SignUp/SignUp.js"));
 
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/" exact element={<Home />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/user" element={<User />} />
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
         </Routes>

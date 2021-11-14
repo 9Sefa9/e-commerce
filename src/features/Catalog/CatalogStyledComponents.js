@@ -6,7 +6,7 @@ export const Section = styled.section`
   align-items: flex-end;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  background-color: #052E50;
+  background-color: #704a02;
   box-shadow: 0px 1px 10px black;
 `;
 export const Header = styled.header`

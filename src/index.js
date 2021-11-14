@@ -6,11 +6,11 @@ import reportWebVitals from "./reportWebVitals";
 const App = React.lazy(() => import("./features/App/App.js"));
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Suspense fallback={<Spinner />}>
-      <App />
-    </Suspense>
-  </React.StrictMode>,
+  <Suspense fallback={<Spinner />}>
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+  </Suspense>,
   document.getElementById("root")
 );
 

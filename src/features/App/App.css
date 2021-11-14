@@ -23,8 +23,8 @@
     src: local('Regular'), url(./fonts/ZenKakuGothicNew/ZenKakuGothicNew-Regular.ttf) format('truetype');
 }
 body{
-  background-color:#052845;
-
+  background-color:#1a1411;
+  margin-top:10%;
 }
 *,html,body{
   font-family: ZenKakuGothicNew-Regular;

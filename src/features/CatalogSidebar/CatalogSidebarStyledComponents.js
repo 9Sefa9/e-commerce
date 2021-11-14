@@ -9,7 +9,7 @@ export const ButtonContainer = styled.div`
   margin-top: 1%;
 `;
 
-export const Button = styled.button`
+export const ButtonToggle = styled.button`
   border-radius: 4px;
   background: transparent;
   padding: 15px 20px;
@@ -33,18 +33,45 @@ export const Button = styled.button`
     font-size: 1.3rem;
   }
 `;
+export const NavButton= styled.button`
+  border-radius: 4px;
+  background: #f8bd66;
+  padding:  10px 20px;
+  margin-left:2%;
+  color: black;
+  font-size: 1.1rem;
+  outline: none;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  box-shadow: 0px 1px 5px white;
+  &.active {
 
+    color: black;
+    background-color: #717fff;
+    font-size: 1.3rem;
+  }
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #717fff;
+    color: black;
+    font-size: 1.3rem;
+  }
+`;
 export const SidebarContainer = styled.div`
   position:fixed;
   height:auto;
   top:0;
-  left: -20%;
-  width: 20%; 
+  left: -25%;
+  width: 25%; 
   z-index: 1; 
-  padding-top: 20px;
   display: flex;
-  flex-direction:row;
-  background-color: yellow;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:space-evenly;
+  background-color: #353854;
+  box-shadow: 0px 1px 5px black;
   height:100%;
   animation-name: ${props => props.sidebarStatus === null ? "null-animation" : props.sidebarStatus === true ? "out-animation" : "in-animation"};
   animation-duration: 1s;
@@ -53,7 +80,7 @@ export const SidebarContainer = styled.div`
 
   @keyframes out-animation{
     from{
-      left: -20%;
+      left: -25%;
     }
     to{
       left: 0%;
@@ -64,15 +91,15 @@ export const SidebarContainer = styled.div`
       left: 0%;
     }
     to{
-      left: -20%;
+      left: -25%;
     }
    }
    @keyframes null-animation{
     from{
-      left: -20%;
+      left: -25%;
     }
     to{
-      left: -20%;
+      left: -25%;
     }
    }
 `;

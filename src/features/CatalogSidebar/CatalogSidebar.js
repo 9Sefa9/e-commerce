@@ -1,6 +1,7 @@
 import { useReducer } from "react";
 import {
-  Button,
+  ButtonToggle,
+  NavButton,
   ButtonContainer,
   SidebarContainer,
 } from "./CatalogSidebarStyledComponents.js";
@@ -14,18 +15,22 @@ function CatalogSidebar() {
   return (
     <div>
       <ButtonContainer>
-        <Button
+        <ButtonToggle
           onClick={() => {
             dispatch(toggle());
           }}
         >
           Filter Catalog
-        </Button>
+        </ButtonToggle>
       </ButtonContainer>
 
       <SidebarContainer sidebarStatus={state.toggleSidebar}>
-      {console.log(state.toggleSidebar)}
-        <p>t</p>
+          
+          <NavButton>Brand</NavButton>
+          <NavButton>Size</NavButton>
+          <NavButton>Sort</NavButton>
+          <NavButton>Price Range</NavButton>
+
       </SidebarContainer>
     </div>
   );
