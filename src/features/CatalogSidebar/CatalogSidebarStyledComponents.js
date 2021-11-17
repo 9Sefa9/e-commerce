@@ -11,7 +11,7 @@ export const ButtonContainer = styled.div`
 
 export const ButtonToggle = styled.button`
   border-radius: 4px;
-  background: transparent;
+  background: #574240;
   padding: 15px 20px;
   color: white;
   font-size: 1.1rem;
@@ -20,16 +20,16 @@ export const ButtonToggle = styled.button`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  box-shadow: 0px 1px 5px white;
+  box-shadow: 0px 1px 5px black;
   &.active {
 
-    color: white;
+    color: black;
     font-size: 1.3rem;
   }
   &:hover {
     transition: all 0.2s ease-in-out;
 
-    color: white;
+    color: black;
     font-size: 1.3rem;
   }
 `;

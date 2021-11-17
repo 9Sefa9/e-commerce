@@ -5,10 +5,9 @@ import {
   ImgLink,
   Bars,
   NavMenu,
-  NavBtn,
-  NavBtnLink,
+  NavBtn
 } from "./NavigationBarStyledComponent";
-import shoppingCartImage from "./images/shopping-cart.png";
+//import shoppingCartImage from "./images/shopping-cart.png";
 import { FaRegUserCircle } from "react-icons/fa";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 const NavigationBar = () => {

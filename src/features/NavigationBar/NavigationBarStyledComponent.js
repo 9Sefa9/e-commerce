@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background:#0d0b0a;
+  background:#0088C9;
   height: 85px;
   width:100%;
   padding: 0% 2%;
@@ -25,7 +25,7 @@ export const NavLogo = styled(Link)`
 
 export const NavLink = styled(Link)`
   color: white;
-  background-color: #b8621d;
+  background-color:#005692;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -39,15 +39,15 @@ export const NavLink = styled(Link)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   &.active {
-    background: #e3904b;
+    background: #005692;
     color: black;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #e3904b;
+    background: #005692;
     color: black;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 `;
 export const ImgLink = styled(Link)`
@@ -126,7 +126,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(Link)`
   border-radius: 4px;
-  background:#b8621d;
+  background:#005692;
   padding: 10px 20px;
   margin-left: 15px;
   color: white;
@@ -137,13 +137,13 @@ export const NavBtnLink = styled(Link)`
   text-decoration: none;
   box-shadow: 0px 1px 5px #ffad6b;
   &.active {
-    background: #e3904b;
+    background: #005692;
     color: black;
     font-size: 1.1rem;
   }
   &:hover {
     transition: all 0.2s ease-in-out;
-    background:  #e3904b;
+    background:  #005692;
     color: black;
     font-size: 1.1rem;
   }

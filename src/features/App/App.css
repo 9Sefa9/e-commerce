@@ -23,7 +23,7 @@
     src: local('Regular'), url(./fonts/ZenKakuGothicNew/ZenKakuGothicNew-Regular.ttf) format('truetype');
 }
 body{
-  background-color:#1a1411;
+  background: linear-gradient(#F3EED9, #798897) fixed;
   margin-top:10%;
 }
 *,html,body{
