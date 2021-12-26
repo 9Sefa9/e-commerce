@@ -1,24 +1,27 @@
-
-import {
-  Main,
-  Header,
-  Nav,
-  Footer,
-} from "./HomeStyledComponents.js";
+import { Main, Header, Nav, Footer } from "./HomeStyledComponents.js";
 import Catalog from "../Catalog/Catalog.js";
 import CatalogSidebar from "../CatalogSidebar/CatalogSidebar.js";
+import BackgroundSlideView from "../BackgroundSlideView/BackgroundSlideView.js";
 function Home() {
   return (
     <div>
-      <Header><p>Order now and get 10 % for your next purchase!  - - - Order now and get 10 % for your next purchase!</p></Header>
-      <Nav><CatalogSidebar /></Nav>
+      <Header>
+        <p>
+          Order now and get 10 % for your next purchase! - - - Order now and get
+          10 % for your next purchase!
+        </p>
+      </Header>
+
+      <BackgroundSlideView />
+      <Nav>
+        <CatalogSidebar />
+      </Nav>
+
       <Main>
         <Catalog />
       </Main>
-     
-      <Footer>
-        I am a Footer!
-      </Footer>
+
+      <Footer>I am a Footer!</Footer>
     </div>
   );
 }
