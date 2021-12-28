@@ -13,11 +13,11 @@ function Home() {
       </Header>
 
       <BackgroundSlideView />
-      <Nav>
-        <CatalogSidebar />
-      </Nav>
-
+     
+      <Nav />
+      <CatalogSidebar />  
       <Main>
+      
         <Catalog />
       </Main>
 

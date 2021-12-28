@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  
-  margin-top: 1%;
+  align-items:center;
+  margin-top: 10%;
+  padding:1%;
+  background-color:rgba(0,0,0,0.5);
+  box-shadow: 10px 1px 20px black;
 `;
 
 export const ButtonToggle = styled.button`
