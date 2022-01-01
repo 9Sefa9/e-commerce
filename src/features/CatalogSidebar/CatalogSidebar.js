@@ -10,7 +10,7 @@ import catalogSidebarSlice, { toggle } from "./CatalogSidebarSlice.js";
 
 function CatalogSidebar() {
   const [state, dispatch] = useReducer(catalogSidebarSlice, {
-    toggleSidebar: true,
+    toggleSidebar: null,
   });
 
   return (

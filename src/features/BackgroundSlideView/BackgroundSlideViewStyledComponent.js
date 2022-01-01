@@ -6,7 +6,7 @@ z-index:-999999999;
 
 position:absolute;
 left:0;
-top:2;
+top:0;
 &>video{
     margin: 0 auto;
     width:100%;
@@ -20,6 +20,6 @@ color:white;
 font-size: 6em;
 position:absolute;
 left:20%;
-top:10%;
+top:35%;
 text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
 `;

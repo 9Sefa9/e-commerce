@@ -1,12 +1,9 @@
-import { useReducer } from "react";
+
 import { Section, Header, Article } from "./CatalogStyledComponents.js";
 import CatalogItem from "../CatalogItem/CatalogItem.js";
 import "./CatalogStylesheet.css";
 
-import catalogSidebarSlice, {
-  toggle,
-} from "../CatalogSidebar/CatalogSidebarSlice.js";
-
+//Will be fetched from Database soon
 const CatalogList = [
   {
     name: "Karo Shirt",
@@ -35,11 +32,54 @@ const CatalogList = [
     height: "500px",
     altImgText: "Ein Blaues Hemd ",
   },
+  {
+    name: "Blaues Hemd",
+    price: "10€",
+    description: "This is a Blaues Hemd",
+    img: "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80",
+    width: "370px",
+    height: "500px",
+    altImgText: "Ein Blaues Hemd ",
+  },
+  {
+    name: "Blaues Hemd",
+    price: "10€",
+    description: "This is a Blaues Hemd",
+    img: "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80",
+    width: "370px",
+    height: "500px",
+    altImgText: "Ein Blaues Hemd ",
+  },
+  {
+    name: "Blaues Hemd",
+    price: "10€",
+    description: "This is a Blaues Hemd",
+    img: "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80",
+    width: "370px",
+    height: "500px",
+    altImgText: "Ein Blaues Hemd ",
+  },
+  {
+    name: "Blaues Hemd",
+    price: "10€",
+    description: "This is a Blaues Hemd",
+    img: "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80",
+    width: "370px",
+    height: "500px",
+    altImgText: "Ein Blaues Hemd ",
+  },
+  {
+    name: "Blaues Hemd",
+    price: "10€",
+    description: "This is a Blaues Hemd",
+    img: "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80",
+    width: "370px",
+    height: "500px",
+    altImgText: "Ein Blaues Hemd ",
+  },
 ];
 function Catalog() {
-  const [state, dispatch] = useReducer(catalogSidebarSlice, {
-    toggleSidebar: null,
-  });
+
 
   return (
     <div className="catalog-main-container">
@@ -50,8 +90,8 @@ function Catalog() {
       <Section>
         {CatalogList.map((element, index) => {
           return (
-            <Article key={index + Math.random() * 1234}>
-              <CatalogItem key={index + Math.random() * 1234} item={element} />
+            <Article key={index + Math.random() * 31213121}>
+              <CatalogItem key={index + Math.random() * 121315} item={element} />
             </Article>
           );
         })}

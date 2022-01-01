@@ -6,7 +6,7 @@ const BackgroundSlideView = () => {
       
       <BackgroundVideoMainContainer>
       <VideoTitle >Next Generation Fashion 2022</VideoTitle>
-        <video src={backgroundVideo} muted="false" autoPlay loop></video>
+        <video src={backgroundVideo} muted autoPlay loop></video>
       </BackgroundVideoMainContainer>
     </>
   );

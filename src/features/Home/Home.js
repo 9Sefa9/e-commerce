@@ -17,7 +17,6 @@ function Home() {
       <Nav />
       <CatalogSidebar />  
       <Main>
-      
         <Catalog />
       </Main>
 

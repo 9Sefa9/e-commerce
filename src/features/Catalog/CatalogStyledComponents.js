@@ -10,10 +10,10 @@ export const Section = styled.section`
 export const Header = styled.header`
 
   text-align: center;
-  font-size: 55px;
+  font-size: 4em;
   color: black;
 
 `;
 export const Article = styled.article`
-padding:2%;
+padding:5%;
 `;
