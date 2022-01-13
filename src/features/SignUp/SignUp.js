@@ -1,6 +1,6 @@
 function SignUp(){
     return (<div>
-        HI
+        SignUp
     </div>);
 }
 export default SignUp;

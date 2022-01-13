@@ -26,7 +26,7 @@ const NavigationBar = () => {
           <ImgLink to="/cart" activeStyle>
             <div className="shopping-cart-container">
               <AiOutlineShoppingCart size={47} color="white" />
-              <p className="shopping-cart-count">9999</p>
+              <p  data-testid="shopping-cart-count-testid" className="shopping-cart-count">9999</p>
             </div>
           </ImgLink>
           {/*<ImgLink to="/cart" activeStyle>
