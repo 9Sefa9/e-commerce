@@ -1,6 +1,6 @@
 import "./App.css";
 import React,{ Suspense } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavigationBar from "../NavigationBar/NavigationBar";
 import Spinner from "../Spinner/Spinner";
 const Home = React.lazy(()=> import("../Home/Home.js"));
@@ -13,7 +13,7 @@ const SignUp = React.lazy(()=> import("../SignUp/SignUp.js"));
 const App = () => {
   return (
     <Suspense fallback={<Spinner />}>
-      <Router>
+      <BrowserRouter>
         <NavigationBar />
         <Routes>
           <Route path="/" exact element={<Home />} />
@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </Suspense>
   );
 };
