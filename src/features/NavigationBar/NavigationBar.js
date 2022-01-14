@@ -14,7 +14,7 @@ const NavigationBar = () => {
   return (
     <div>
       <Nav>
-        <NavLogo to="/">Logo</NavLogo>
+        <NavLogo to="/"><img alt="logo"/></NavLogo>
         <Bars />
         <NavMenu>
           <NavLink to="/" activeStyle>
