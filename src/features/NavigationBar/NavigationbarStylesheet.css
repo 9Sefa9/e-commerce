@@ -1,0 +1,25 @@
+.navigation-container {
+  padding: 0.9rem;
+  font-size: 1.5rem;
+  background-color: #0088c9;
+}
+.navigation-logo {
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.shopping-cart-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.shopping-cart-image {
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+.shopping-cart-count {
+  font-size: 1.3rem;
+  color: black;
+}
