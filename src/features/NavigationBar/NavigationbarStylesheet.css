@@ -1,14 +1,15 @@
 .navigationbar-container {
-  padding: 0.8rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   background-color: #0088c9;
   color:black;
 }
 .navigation-logo {
   cursor: pointer;
-  font-size: 2rem;
   text-decoration: none;
+}
+.navigation-logo > img{
+  height:3rem;
 }
 .navigation-container{
   margin-left: auto;
@@ -46,4 +47,7 @@
 .shopping-cart-count {
   font-size: 1.3rem;
   color: black;
+}
+#collasible-nav-dropdown::after{
+  display:none;
 }

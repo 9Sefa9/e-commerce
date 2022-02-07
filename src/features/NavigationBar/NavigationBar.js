@@ -4,25 +4,24 @@ import {BsHouseDoor} from "react-icons/bs";
 import {RiInformationLine} from "react-icons/ri";
 import {FaRegUserCircle} from "react-icons/fa";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import logo from '../../logo.svg';
+import logo from '../../logo-crop.svg';
 const NavigationBar = () => {
   return (
     <>
       <Navbar className="navigationbar-container" collapseOnSelect expand="md" variant="light" fixed="top">
         <Container>
-        <Navbar.Brand className="navigation-logo" href="/"><img src={logo} width={100} height={100}/></Navbar.Brand>
+        <Navbar.Brand className="navigation-logo" href="/"><img src={logo}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="navigation-container" defaultActiveKey="/home">
-            <Nav.Link className="navigation-link" href="/"><BsHouseDoor size={35}/>Home</Nav.Link>
-            <Nav.Link className="navigation-link" href="/about"><RiInformationLine size={35} />About</Nav.Link>
-            <Nav.Link className="navigation-link" href="/cart"><AiOutlineShoppingCart size={35}/><span className="shopping-cart-count">999999</span></Nav.Link> 
-            <NavDropdown title={/* GrCircleInformation */ <FaRegUserCircle size={35}/> } id="collasible-nav-dropdown">
+            <Nav.Link className="navigation-link" href="/"><BsHouseDoor size={25}/>Home</Nav.Link>
+            <Nav.Link className="navigation-link" href="/about"><RiInformationLine size={25} />About</Nav.Link>
+            <Nav.Link className="navigation-link" href="/cart"><AiOutlineShoppingCart size={25}/><span className="shopping-cart-count">999999</span></Nav.Link> 
+            <NavDropdown title={<div><FaRegUserCircle size={35}/> User</div>} id="collasible-nav-dropdown">
               <NavDropdown.Item className="navigation-item" href="/login">Login</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item className="navigation-item" href="/register">Register</NavDropdown.Item>
-            </NavDropdown>
-            
+            </NavDropdown>   
           </Nav>
         </Navbar.Collapse>
         </Container>
