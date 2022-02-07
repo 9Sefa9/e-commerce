@@ -1,13 +1,12 @@
 import backgroundVideo from "./background.mp4";
-import { VideoTitle , BackgroundVideoMainContainer } from "./BackgroundSlideViewStyledComponent.js";
+import "./BackgroundSlideViewStylesheet.css";
 const BackgroundSlideView = () => {
   return (
     <>
-      
-      <BackgroundVideoMainContainer>
-      <VideoTitle >Next Generation Fashion 2022</VideoTitle>
-        <video src={backgroundVideo} muted autoPlay loop></video>
-      </BackgroundVideoMainContainer>
+      <div className="background-video-container" />
+      <div className="video-title"></div>
+      <video src={backgroundVideo} muted autoPlay loop></video>
+
     </>
   );
 };

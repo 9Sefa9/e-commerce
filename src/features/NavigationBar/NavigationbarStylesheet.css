@@ -1,33 +1,32 @@
 .navigationbar-container {
   font-size: 1.2rem;
   font-weight: bolder;
-  background-color: #0088c9;
-  color:black;
+  background-color: white;
+
 }
 .navigation-logo {
   cursor: pointer;
   text-decoration: none;
 }
 .navigation-logo > img{
-  height:3rem;
+  height:100px;
 }
 .navigation-container{
   margin-left: auto;
   text-decoration: none;
 }
 .navigation-link{
-  margin:0 1rem;
-  background-color:#005692;
+  margin:0 3rem;
   border: 1px solid white;
   border-radius: 4px;
   box-shadow: 0px 1px 5px white;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  
+  color:black !important;
 }
 .navigation-link:hover{
   transition: all 0.2s ease-in-out;
-  background-color:#97d2fd;
+  background-color:#c26e63;
   color:black  !important;
   font-size: 1.4rem;
   
@@ -36,17 +35,18 @@
   font-size: 1.4rem;
 }
 .navigation-item{
+  margin-left: 0 auto;
   font-size:1.2em;
   font-weight:bold;
+  color:black !important;
 }
-.shopping-cart-image {
-  background-color: transparent;
-  text-decoration: none;
-  cursor: pointer;
+.navigation-item:hover{
+  transition: all 0.2s ease-in-out;
+  font-size: 1.6rem;
 }
 .shopping-cart-count {
-  font-size: 1.3rem;
-  color: black;
+  font-size: 1.2rem;
+
 }
 #collasible-nav-dropdown::after{
   display:none;
