@@ -22,11 +22,14 @@
     font-family: 'ZenKakuGothicNew-Regular';
     src: local('Regular'), url(./fonts/ZenKakuGothicNew/ZenKakuGothicNew-Regular.ttf) format('truetype');
 }
-body{
-  background: linear-gradient(#F3EED9, #798897) fixed;
-  margin-top:10%;
+
+:root{
+  --dark-sky-blue: #93B7BE;
+  --mint-cream: #F1FFFA;
+  --pale-silver: #D5C7BC;
+  --deep-taupe: #785964;
+  --onyx: #454545;
 }
 *,html,body{
   font-family: ZenKakuGothicNew-Regular;
-
 }

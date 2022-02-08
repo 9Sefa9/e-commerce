@@ -16,7 +16,7 @@ const NavigationBar = () => {
           <Nav className="navigation-container" defaultActiveKey="/home">
             <Nav.Link className="navigation-link" href="/"><BsHouseDoor size={25}/>Home</Nav.Link>
             <Nav.Link className="navigation-link" href="/about"><RiInformationLine size={25} />About</Nav.Link>
-            <Nav.Link className="navigation-link" href="/cart"><AiOutlineShoppingCart size={25}/><span>999999</span></Nav.Link> 
+            <Nav.Link className="navigation-link" href="/cart"><AiOutlineShoppingCart size={25}/><span>0</span></Nav.Link> 
             <NavDropdown title={<div className="navigation-item"><FaRegUserCircle size={35}/> User</div>} id="collasible-nav-dropdown">
               <NavDropdown.Item className="navigation-item" href="/login">Login</NavDropdown.Item>
               <NavDropdown.Divider />

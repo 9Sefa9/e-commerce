@@ -1,8 +1,8 @@
 .navigationbar-container {
   font-size: 1.2rem;
   font-weight: bolder;
-  background-color: white;
-
+  background-color: var(--mint-cream);
+  box-shadow: 0px 0px 10px black;
 }
 .navigation-logo {
   cursor: pointer;
@@ -26,7 +26,7 @@
 }
 .navigation-link:hover{
   transition: all 0.2s ease-in-out;
-  background-color:#c26e63;
+  background-color: var(--dark-sky-blue);
   color:black  !important;
   font-size: 1.4rem;
   

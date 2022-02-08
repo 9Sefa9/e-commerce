@@ -1,8 +1,17 @@
-.catalog-main-container {
+.catalog-title {
+  text-align: center;
+  font-size: 4em;
+  color: black;
+}
+.catalog-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #bfa5a3;
-  box-shadow: 0px 1px 10px black;
+  align-items: stretch;
+  gap:5rem;
+  background-color: var(--pale-silver);
+  margin: 2rem;
+  padding: 2rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px black;
 }
+
