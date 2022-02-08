@@ -5,8 +5,9 @@
 }
 .catalog-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: stretch;
+  flex-wrap: wrap;
   gap:5rem;
   background-color: var(--pale-silver);
   margin: 2rem;

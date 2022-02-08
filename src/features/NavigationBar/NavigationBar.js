@@ -4,7 +4,7 @@ import {BsHouseDoor} from "react-icons/bs";
 import {RiInformationLine} from "react-icons/ri";
 import {FaRegUserCircle} from "react-icons/fa";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import logo from '../../logo.svg';
+import logo from '../../logoSideBySideBlack.svg';
 const NavigationBar = () => {
   return (
     <>

@@ -1,15 +1,16 @@
 .navigationbar-container {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bolder;
   background-color: var(--mint-cream);
   box-shadow: 0px 0px 10px black;
 }
 .navigation-logo {
+
   cursor: pointer;
   text-decoration: none;
 }
 .navigation-logo > img{
-  height:100px;
+  height:50px;
 }
 .navigation-container{
   margin-left: auto;
