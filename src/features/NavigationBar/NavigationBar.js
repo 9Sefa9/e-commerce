@@ -3,20 +3,20 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import {BsHouseDoor} from "react-icons/bs";
 import {RiInformationLine} from "react-icons/ri";
 import {FaRegUserCircle} from "react-icons/fa";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Badge, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import logo from '../../logoSideBySideBlack.svg';
 const NavigationBar = () => {
   return (
     <>
       <Navbar className="navigationbar-container" collapseOnSelect expand="md" variant="light" fixed="top">
         <Container>
-        <Navbar.Brand className="navigation-logo" href="/"><img src={logo}/></Navbar.Brand>
+        <Navbar.Brand className="navigation-logo" href="/"><img alt="Berrid's Clothing Logo" src={logo}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="navigation-container" defaultActiveKey="/home">
             <Nav.Link className="navigation-link" href="/"><BsHouseDoor size={25}/>Home</Nav.Link>
             <Nav.Link className="navigation-link" href="/about"><RiInformationLine size={25} />About</Nav.Link>
-            <Nav.Link className="navigation-link" href="/cart"><AiOutlineShoppingCart size={25}/><span>0</span></Nav.Link> 
+            <Nav.Link className="navigation-link" href="/cart"><AiOutlineShoppingCart size={25}/><Badge pill  bg="dark">0</Badge></Nav.Link> 
             <NavDropdown title={<div className="navigation-item"><FaRegUserCircle size={35}/> User</div>} id="collasible-nav-dropdown">
               <NavDropdown.Item className="navigation-item" href="/login">Login</NavDropdown.Item>
               <NavDropdown.Divider />

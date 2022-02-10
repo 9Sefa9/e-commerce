@@ -1,5 +1,4 @@
 import Catalog from "../Catalog/Catalog.js";
-import CatalogSidebar from "../CatalogSidebar/CatalogSidebar.js";
 import BackgroundSlideView from "../BackgroundSlideView/BackgroundSlideView.js";
 function Home() {
   return (
