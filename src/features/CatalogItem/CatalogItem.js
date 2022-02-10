@@ -42,7 +42,7 @@ function CatalogItem(props) {
               </InputGroup>
             </ListGroup.Item>
             <ListGroup.Item><BiBarcode size={25}/>Productcode: 114955662</ListGroup.Item>
-            <ListGroup.Item><GiClothes size={25}/>About Cloth: Made of fine, elastic mesh fabric which is soft and transparent</ListGroup.Item>
+            <ListGroup.Item><GiClothes size={25}/>Cloth: Made of fine, elastic mesh fabric which is soft and transparent</ListGroup.Item>
             <ListGroup.Item><GiRolledCloth size={25}/>Main: 95% Polyester, 5% Elastan.</ListGroup.Item>
             <ListGroup.Item><MdOutlineLocalShipping  size={25}/>Free Delivery</ListGroup.Item>
             <ListGroup.Item><GiReturnArrow size={25}/>Free Returns</ListGroup.Item>
