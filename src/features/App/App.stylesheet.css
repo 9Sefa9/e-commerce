@@ -30,6 +30,6 @@
   --deep-taupe: #785964;
   --onyx: #454545;
 }
-*,html,body{
+*{
   font-family: ZenKakuGothicNew-Regular;
 }

@@ -1,5 +1,5 @@
 import backgroundVideo from "./background.mp4";
-import "./BackgroundSlideViewStylesheet.css";
+import "./BackgroundSlideView.stylesheet.css";
 const BackgroundSlideView = () => {
   return (
     <>

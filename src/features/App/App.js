@@ -1,4 +1,4 @@
-import "./AppStylesheet.css";
+import "./App.stylesheet.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React,{ Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";

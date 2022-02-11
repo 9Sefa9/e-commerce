@@ -1,5 +1,5 @@
 import CatalogItem from "../CatalogItem/CatalogItem.js";
-import "./CatalogStylesheet.css";
+import "./Catalog.stylesheet.css";
 
 //Will be fetched from Database/REST soon
 const CatalogList = [

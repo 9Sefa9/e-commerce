@@ -1,4 +1,4 @@
-import "./NavigationbarStylesheet.css";
+import "./Navigationbar.stylesheet.css";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import {BsHouseDoor} from "react-icons/bs";
 import {RiInformationLine} from "react-icons/ri";

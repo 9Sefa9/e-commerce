@@ -5,6 +5,8 @@ import {MdOutlineLocalShipping} from "react-icons/md";
 import {GiReturnArrow,GiRolledCloth,GiClothes} from "react-icons/gi";
 import {BiBarcode} from "react-icons/bi";
 import {CgColorBucket} from "react-icons/cg";
+import {IoIosResize} from "react-icons/io";
+import {FaRegDotCircle} from "react-icons/fa";
 import { InputGroup, ListGroup, Badge, DropdownButton, Dropdown } from "react-bootstrap";
 function CatalogItem(props) {
 
@@ -27,20 +29,39 @@ function CatalogItem(props) {
           <ListGroup>
             <ListGroup.Item> 
               <InputGroup>
-              <DropdownButton variant="outline-secondary" title={<div><CgColorBucket size={25}/>Colors</div>} id="input-group-dropdown-1">
-                <Dropdown.Item>S</Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Item>M</Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Item>L</Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Item >XL</Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Item >XXL</Dropdown.Item>
-                <Dropdown.Divider />
-              </DropdownButton>
+              {/** <CgColorBucket size={25}/> **/}
+              <div className="dropdown-button-container">
+                <DropdownButton variant="outline-dark" title={<div> <IoIosResize size={25}/>Sizes</div>}>
+                  {/** add Badge for marking "that" product as selected OR:   **/}
+                  <Dropdown.Item >S</Dropdown.Item>
+                  <Dropdown.Divider />
+                  <Dropdown.Item>M</Dropdown.Item>
+                  <Dropdown.Divider />
+                  <Dropdown.Item>L</Dropdown.Item>
+                  <Dropdown.Divider />
+                  <Dropdown.Item >XL</Dropdown.Item>
+                  <Dropdown.Divider />
+                  <Dropdown.Item >XXL</Dropdown.Item>
+                  <Dropdown.Divider />
+                </DropdownButton>
+                <DropdownButton variant="outline-dark" title={<div> <CgColorBucket size={25}/>Colors</div>}>
+                  {/** add Badge for marking "that" product as selected OR:   **/}
+                  <Dropdown.Item >S</Dropdown.Item>
+                  <Dropdown.Divider />
+                  <Dropdown.Item>M</Dropdown.Item>
+                  <Dropdown.Divider />
+                  <Dropdown.Item>L</Dropdown.Item>
+                  <Dropdown.Divider />
+                  <Dropdown.Item >XL</Dropdown.Item>
+                  <Dropdown.Divider />
+                  <Dropdown.Item >XXL</Dropdown.Item>
+                  <Dropdown.Divider />
+                </DropdownButton>
+              </div>
               </InputGroup>
             </ListGroup.Item>
+            <ListGroup.Item>Availability: <FaRegDotCircle size={25} color="green"/></ListGroup.Item>
+            <ListGroup.Item>Selected: <Badge pill bg="dark">XL</Badge></ListGroup.Item>
             <ListGroup.Item><BiBarcode size={25}/>Productcode: 114955662</ListGroup.Item>
             <ListGroup.Item><GiClothes size={25}/>Cloth: Made of fine, elastic mesh fabric which is soft and transparent</ListGroup.Item>
             <ListGroup.Item><GiRolledCloth size={25}/>Main: 95% Polyester, 5% Elastan.</ListGroup.Item>
