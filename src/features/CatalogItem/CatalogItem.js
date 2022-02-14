@@ -7,13 +7,31 @@ import {BiBarcode} from "react-icons/bi";
 import {CgColorBucket} from "react-icons/cg";
 import {IoIosResize} from "react-icons/io";
 import {FaRegDotCircle} from "react-icons/fa";
-import { InputGroup, ListGroup, Badge, DropdownButton, Dropdown } from "react-bootstrap";
+import { InputGroup, ListGroup, Badge, DropdownButton, Dropdown, Carousel } from "react-bootstrap";
 function CatalogItem(props) {
 
   return (
     <article className="catalog-main-container">
-      <img className="catalog-item-image" width={props.item.width} height={props.item.height} src={props.item.img} alt={props.item.altImgText}/>
-      <div>
+      <div className="catalog-item-1">
+        <Carousel className="catalog-carousel" wrap variant="light">
+          <Carousel.Item>
+            <img className="catalog-item-image" width={props.item.width} height={props.item.height} src={props.item.img} alt={props.item.altImgText}/>
+            {/**<Carousel.Caption>
+              <h5>First slide label</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>**/}
+          </Carousel.Item>  
+          <Carousel.Item>
+            <img className="catalog-item-image d-block" width={props.item.width} height={props.item.height} src={props.item.img} alt={props.item.altImgText}/>
+            
+          </Carousel.Item>  
+          <Carousel.Item>
+            <img className="catalog-item-image" width={props.item.width} height={props.item.height} src={props.item.img} alt={props.item.altImgText}/>
+           
+          </Carousel.Item>  
+        </Carousel>
+      </div>
+      <div className="catalog-item-2">
         <div className="catalog-information-container">
           <header className="catalog-item-header">{props.item.name}</header>
           <p className="catalog-item-description">{props.item.description}</p>
@@ -25,11 +43,10 @@ function CatalogItem(props) {
           <Badge pill bg="light" className="catalog-item-price"><RiPriceTag3Line size={25}/>{props.item.price} VAT included</Badge>
 
         </div>
-        <div>
+        <div className="catalog-list-group-container">
           <ListGroup>
             <ListGroup.Item> 
               <InputGroup>
-              {/** <CgColorBucket size={25}/> **/}
               <div className="dropdown-button-container">
                 <DropdownButton variant="outline-dark" title={<div> <IoIosResize size={25}/>Sizes</div>}>
                   {/** add Badge for marking "that" product as selected OR:   **/}

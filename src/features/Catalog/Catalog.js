@@ -1,3 +1,4 @@
+import { Card } from "react-bootstrap";
 import CatalogItem from "../CatalogItem/CatalogItem.js";
 import "./Catalog.stylesheet.css";
 
@@ -80,7 +81,70 @@ function Catalog() {
   return (
     <>
       <div className="catalog-title">
-        Discover
+        <h1>Suits</h1>
+        <h3>Discover other catalogs</h3>
+      </div>
+      <div className="card-group-container">
+        <div className="card-group-item">
+          <Card bg="light">
+          <Card.Header>Header</Card.Header>
+            <Card.Body>
+              <Card.Title> Card Title </Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the bulk
+                of the card's content.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
+        <div className="card-group-item">
+          <Card bg="light">
+          <Card.Header>Header</Card.Header>
+            <Card.Body>
+              <Card.Title> Card Title </Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the bulk
+                of the card's content.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
+        <div className="card-group-item">
+          <Card bg="light">
+          <Card.Header>Header</Card.Header>
+            <Card.Body>
+              <Card.Title> Card Title </Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the bulk
+                of the card's content.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
+        <div className="card-group-item">
+          <Card bg="light">
+          <Card.Header>Header</Card.Header>
+            <Card.Body>
+              <Card.Title> Card Title </Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the bulk
+                of the card's content.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
+        <div className="card-group-item">
+          <Card bg="light">
+          <Card.Header>Header</Card.Header>
+            <Card.Body>
+              <Card.Title> Card Title </Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the bulk
+                of the card's content.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
       </div>
       <section className="catalog-section">
         {CatalogList.map((element, index) => {
